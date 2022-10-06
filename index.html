@@ -10,23 +10,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;1,100&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-<header id="mainheader" class="d-flex justify-content-between">
-    <div id="brand" class="d-flex align-items-center w-30">
-        <img src="./images/logo.png" alt="logo prechu">
-        <p>Prechu</p>
+<header id="mainheader">
+
+    <div class="d-flex justify-content-between w-100">
+            <div id="brand" class="d-flex align-items-center w-30">
+                <img src="./images/logo.png" alt="logo prechu">
+                <p>Prechu</p>
+            </div>
+            <nav class="w-70 d-flex align-items-end">
+                <ul class="d-flex justify-content-evenly w-100">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
     </div>
-    <nav class="w-70 d-flex align-items-end">
 
-            <ul class="d-flex justify-content-evenly w-100">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+    <div id="hero">
+        <img src="./images/background_slider.png" alt="slider">
+        <div id="slidertext">
+            <h1>Lorem Ipsum is simply<span>dummy text of the printing & typesetting</span></h1>
+            <button id="btn"><i class="fas fa-check-circle"></i>Sign up now</button>
+        </div>
 
-    </nav>
+    </div>
 </header>
 <main>
     <section id="latestnews">
@@ -35,21 +46,21 @@
         </header>
         <div class="d-flex justify-content-between">
             <article class="text-center">
-                <img class="bol bol1" src="./images/pencil.png" alt="image pencil">
+                <img class="bol bol1 bounce-in-top" src="./images/pencil.png" alt="image pencil">
                 <header>
                     <h3 class="bluefg">Contrary to popular</h3>
                 </header>
                 <p>Lorem Ipsum is not simply random text. It has roots in a piece</p>
             </article>
             <article class="text-center">
-                <img class="bol bol2" src="./images/pc.png" alt="image pc">
+                <img class="bol bol2 bounce-in-top" src="./images/pc.png" alt="image pc">
                 <header>
                     <h3 class="bluefg">Contrary to popular</h3>
                 </header>
                 <p>Lorem Ipsum is not simply random text. It has roots in a piece</p>
             </article>
             <article class="text-center">
-                <img class="bol bol3" src="./images/basket.png" alt="image basket">
+                <img class="bol bol3 bounce-in-top" src="./images/basket.png" alt="image basket">
                 <header>
                     <h3 class="bluefg">Contrary to popular</h3>
                 </header>
@@ -61,9 +72,9 @@
                 <header>
                     <h2>The Shopping cart</h2>
                 </header>
-                <img id="bigbasket" src="./images/bigbasket.png" alt="big shopping">
+                <img id="bigbasket" src="./images/bigbasket.png" alt="big shopping" data-aos="fade-right" data-aos-duration="8000">
             </div>
-            <div class="w-50 d-flex flex-column align-items-center justify-content-center">
+            <div class="w-50 d-flex flex-column align-items-center justify-content-center" data-aos="fade-up-left" data-aos-duration="8000">
                <header>
                    <h3>Some Bullet Text Here</h3>
                </header>
@@ -77,10 +88,61 @@
             </div>
         </article>
     </section>
+    <section id="adres">
+        <header>
+            <h2 class="text-center">MIJN ADRES</h2>
+        </header>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2513.779744059014!2d3.0972594159569735!3d50.94628625939361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c335bceb4d0467%3A0xa4ec8ad74209fbc5!2sSyntra%20West!5e0!3m2!1snl!2sbe!4v1665039961280!5m2!1snl!2sbe" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <section id="movies">
+        <article>
+            <header>
+                <h2 data-aos="fade-left"
+                    data-aos-anchor="#example-anchor"
+                    data-aos-offset="500"
+                    data-aos-duration="500">Chess movie Bobby Fisher</h2>
+            </header>
+            <div class="d-flex">
+                <div class="w-50" data-aos="fade-up"
+                     data-aos-duration="3000">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/_9Ly6jx2uz8?" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="w-50 d-flex align-items-center">
+                    <p>Dit is één van de beste spelers ter wereld geweest!</p>
+                </div>
+            </div>
+        </article>
+        <article>
+            <header>
+                <h2>internal movies</h2>
+
+            </header>
+            <video width="100%" height="300" controls>
+                <source src="./movies/frog.mp4" type="video/mp4">
+            </video>
+        </article>
+    </section>
+    <section id="audio">
+        <header>
+            <h2>
+                Audio fragment
+            </h2>
+        </header>
+        <audio controls>
+            <source src="./audio/powerfull.mp3" type="audio/mpeg">
+        </audio>
+    </section>
+
 </main>
 <footer>
     <p id="footertext" class="text-center">Copyright &copy; 2012-2013 cssauthor.com</p>
 </footer>
 
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script src="https://kit.fontawesome.com/a193e6106f.js" crossorigin="anonymous"></script>
 </body>
 </html>
